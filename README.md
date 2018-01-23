@@ -1,1 +1,1 @@
-# computer-vision
+# Computer Vision

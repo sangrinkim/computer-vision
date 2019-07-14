@@ -26,7 +26,7 @@ namespace SpectralSaliencyMap
 
         private void SetOpenFileDialog()
         {
-            openFileDialog1.Title = "이미지 선택";
+            openFileDialog1.Title = "Select Image";
             openFileDialog1.Filter = "Image Files(*.png;*.jpg;*.jpeg)|*.png;*.jpg;*.jpeg";
         }
 
@@ -42,7 +42,7 @@ namespace SpectralSaliencyMap
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("에러: 디스크에서 파일을 읽을 수 없습니다. 오류메시지: " + ex.Message);
+                    MessageBox.Show("Error: Can't read file from disk.\n" + ex.Message);
                 }
             }
         }
@@ -51,7 +51,7 @@ namespace SpectralSaliencyMap
         {
             if (loadedImage == null)
             {
-                MessageBox.Show("선택된 이미지가 없습니다.");
+                MessageBox.Show("Please, Select Image..");
                 return;
             }
 

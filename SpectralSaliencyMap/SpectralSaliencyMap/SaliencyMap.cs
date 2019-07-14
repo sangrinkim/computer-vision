@@ -25,7 +25,7 @@ namespace SpectralSaliencyMap
         public static Bitmap GetTransferImage(Bitmap srcImage, int imageSize)
         {
             if ((imageSize & (imageSize - 1)) != 0)
-                throw new ArgumentException("이미지 사이즈는 2의 n승이여야 합니다.");
+                throw new ArgumentException("Wrong Image size!!!");
             else
             {
                 IMAGE_SIZE_X = imageSize;
@@ -64,8 +64,6 @@ namespace SpectralSaliencyMap
             {
                 for (int y = 0; y < IMAGE_SIZE_Y; y++)
                 {
-                    // abs (z) = sqrt (x^2 + y^2)
-                    // 따라서, 우리는 Complex.Magnitude로 구할 수 있다.
                     logAmpl[x, y] = Math.Log(complexImage.Data[x, y].Magnitude);
                 }
             }

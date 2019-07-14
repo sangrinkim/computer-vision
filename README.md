@@ -3,9 +3,11 @@ Computer Vision Codes
 
 Spectral Saliency Map [C#]
 --------------------------
+* Screenshot
+  <img src="https://user-images.githubusercontent.com/4735754/61182563-34915b00-a670-11e9-8175-e7c119ef2f2b.png">
 * Dependency
   * IDE
-    * Visual Studio 2015
+    * Visual Studio 2017
     * .NETFramework v4.5.2
   * packages
     * Accord.3.8.0
@@ -15,5 +17,3 @@ Spectral Saliency Map [C#]
     * AForge.2.2.5
     * AForge.Imaging.2.2.5
     * AForge.Math.2.2.5
-* Screenshot
-  <img src="https://user-images.githubusercontent.com/4735754/61182563-34915b00-a670-11e9-8175-e7c119ef2f2b.png">

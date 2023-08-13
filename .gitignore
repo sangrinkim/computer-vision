@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+opencv/SampleTest1/.vs/SampleTest1/v17/.suo
+opencv/SampleTest1/.vs/SampleTest1/v17/.suo
+*.db

@@ -11,11 +11,18 @@ int main()
 {
     cv::Mat frame;
     cv::VideoCapture cap;
-
+    cv::String filename; // Windows: "C:\\Temp\\abc.mp4" | requirement : opencv_videoio_ffmpeg480_64.dll
+    
     int deviceID = 0;
     int apiID = cv::CAP_ANY;
 
-    cap.open(deviceID, apiID);
+    if (filename.empty()) {
+        cap.open(deviceID, apiID);
+    }
+    else {
+        cap.open(filename, apiID);
+    }
+
     if (!cap.isOpened()) {
         std::cerr << "ERROR! Unable to open camera\n";
         return -1;
